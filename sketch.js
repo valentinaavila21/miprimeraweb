@@ -11,7 +11,7 @@ function draw() {
   noStroke();
   
   // Niebla colorida, muy transparente
-  fill(random(0,360), 100, 100, 10); // alfa=10 → casi transparente
+  fill(random(0,360), 100, 100, 20); // alfa=10 → casi transparente
   
   ellipse(mouseX, mouseY, d, d);
 }
