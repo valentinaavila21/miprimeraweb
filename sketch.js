@@ -1,17 +1,19 @@
 var d; 
 
 function setup() {
- createCanvas(windowWidth, windowHeight).position(0,0).style('z-index','-1');
- colorMode(RGB, 255, 255, 255, 255);
-  background(26,182,240,50);
+  createCanvas(windowWidth, windowHeight).position(0,0).style('z-index','-1');
+  colorMode(HSB, 360, 100, 100, 100); // Incluye alfa
+  background(197, 80, 95);
 }
 
 function draw() {
-  d = random(10,60)
-  colorMode(HSB,360,100,100);
+  d = random(10,60);
   noStroke();
-  fill(random(0,360),100,100);
-  ellipse(mouseX,mouseY,d,d)
+  
+  // Niebla colorida, muy transparente
+  fill(random(0,360), 100, 100, 10); // alfa=10 → casi transparente
+  
+  ellipse(mouseX, mouseY, d, d);
 }
 
 function keyPressed() {
@@ -19,4 +21,3 @@ function keyPressed() {
     save('dibujo.jpg');
   }
 }
- 
