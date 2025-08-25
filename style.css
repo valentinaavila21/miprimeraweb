@@ -2,6 +2,7 @@ html, body {
   font-family:Helvetica, Arial, sans-serif; 
   margin: 0;
   padding: 0;
+  color: blue;
 }
 
 canvas {
@@ -28,8 +29,4 @@ ol{
 li{
   list-style:none
   line-height:2rem;
-}
-
-.texto {
-  color: #5500AA; /* Color morado para todo el contenido */
 }
